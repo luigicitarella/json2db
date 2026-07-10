@@ -1,5 +1,5 @@
 # json2db
-PHP code to convert multiple heavly nested json files to sqlite db
+PHP code to convert multiple deeply nested json files to sqlite db
 
 It navigate inside json structure to find info that can be mapped to tables and import them into SQLITE whithout having to know about the DB schema.
 The tool will also insert a column about the json level of the tuple and an unique id of the table.
