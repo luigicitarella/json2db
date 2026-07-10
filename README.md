@@ -103,7 +103,7 @@ Consider the following json
 	]
 }
 ```
-
+```sql
 The following tables will be generated:
 
 CREATE TABLE IF NOT EXISTS "files" (
@@ -145,7 +145,7 @@ CREATE TABLE IF NOT EXISTS "topping" (
 	"jsonLevel"	TEXT,
 	PRIMARY KEY("pk")
 );
-
+```
 
 And then the tuples inserted will be:
 ```sql
