@@ -5,7 +5,7 @@ PHP code to convert multiple deeply nested json files to sqlite db
 - The tool will also insert a column about the json level of the tuple and an unique id of the table.
 - The first tuple of each file will be stored in the files table with any root info.
 - If he finds a tuple that is already inserted it will not import them twice.
-	- For this reason a parent child logic will not work. In order to reconstruct the links between the tables a path table is generatedthat is based on the sctucture of the imported json.
+	- For this reason a parent child logic will not work. In order to reconstruct the links between the tables a path table is generated based on the sctucture of the imported json.
 
 
 # Usage
