@@ -148,6 +148,7 @@ CREATE TABLE IF NOT EXISTS "topping" (
 
 
 And then the tuples inserted will be:
+```sql
 INSERT INTO "files" ("pk","jsonLevel","filename") VALUES (1,'root','example.json');
 INSERT INTO "donut" ("pk","id","name","ppu","jsonLevel") VALUES (1,'0001','Cake','0.55','root.donut');
 INSERT INTO "donut" ("pk","id","name","ppu","jsonLevel") VALUES (2,'0002','Raised','0.55','root.donut');
@@ -190,7 +191,7 @@ INSERT INTO "path_table" ("pk","pathId","pathLevel","lastPkLevel","nodeId","node
 INSERT INTO "path_table" ("pk","pathId","pathLevel","lastPkLevel","nodeId","nodeTable","parentId","parentTable") VALUES (25,1,3,25,2,'topping',3,'donut');
 INSERT INTO "path_table" ("pk","pathId","pathLevel","lastPkLevel","nodeId","nodeTable","parentId","parentTable") VALUES (26,1,3,26,6,'topping',3,'donut');
 INSERT INTO "path_table" ("pk","pathId","pathLevel","lastPkLevel","nodeId","nodeTable","parentId","parentTable") VALUES (27,1,3,27,7,'topping',3,'donut');
-
+```
 # Features
 Minimal number of tables: table batters.batter is named because the tool find no info in bundles but just 1 entity so there is no meaning in creating batters + batter tables 
 No repeated tuples: Glazed topping is imported one and isthen linked to the donuts Ids into path_table
