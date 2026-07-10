@@ -13,17 +13,21 @@ Json2DB($JsonDir, $destDB, $appendToDB = false, $regexFilterArray = null, $looku
 
 $appendToDB can be set to true to append more files to the same db
 $regexFilterArray can be used to filter jsons before creating the db
-    $regexFilterArray =
+    
+	$regexFilterArray =
     [
         '/^root.[0-9]+.name$/',
     ]
+	
 $lookup can be used to change json attribute name before importing into db
+
     $lookup = [
         
         'node' => 'name',
         'othernode' => 'name',
         'morenode'  => 'more',
     ];
+	
 
 # example
 Consider the following json 
