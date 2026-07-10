@@ -193,6 +193,6 @@ INSERT INTO "path_table" ("pk","pathId","pathLevel","lastPkLevel","nodeId","node
 INSERT INTO "path_table" ("pk","pathId","pathLevel","lastPkLevel","nodeId","nodeTable","parentId","parentTable") VALUES (27,1,3,27,7,'topping',3,'donut');
 ```
 # Features
-Minimal number of tables: table batters.batter is named because the tool find no info in bundles but just 1 entity so there is no meaning in creating batters + batter tables 
-No repeated tuples: Glazed topping is imported one and isthen linked to the donuts Ids into path_table
-Json info: the level of each tuple is shown in the path table toghether with the last sub level so that knowing the row in path table one can find all the subtree
+- Minimal number of tables: table batters.batter is named because the tool find no info in bundles but just 1 entity so there is no meaning in creating batters + batter tables 
+- No repeated tuples: Glazed topping is imported one and isthen linked to the donuts Ids into path_table
+- Json info: the level of each tuple is shown in the path table toghether with the last sub level so that knowing the row in path table one can find all the subtree
