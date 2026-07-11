@@ -13,6 +13,7 @@ Json2DB($JsonDir, $destDB, $appendToDB = false, $regexFilterArray = null, $looku
 
 $appendToDB can be set to true to append more files to the same db
 $regexFilterArray can be used to filter jsons before creating the db
+It uses regex based on the flattened version of the json (. is used as delimiter)
     
 	$regexFilterArray =
     [
