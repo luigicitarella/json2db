@@ -11,9 +11,10 @@ PHP code to convert multiple deeply nested json files to sqlite db
 # Usage
 Json2DB($JsonDir, $destDB, $appendToDB = false, $regexFilterArray = null, $lookup = null) 
 
-$appendToDB can be set to true to append more files to the same db
-$regexFilterArray can be used to filter jsons before creating the db
-It uses regex based on the flattened version of the json (. is used as delimiter)
+$appendToDB can be set to true to append more files to the same db.
+
+$regexFilterArray can be used to filter jsons before creating the db.
+It uses regex based on the flattened version of the json (. is used as delimiter).
     
 	$regexFilterArray =
     [
