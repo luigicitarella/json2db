@@ -2,6 +2,7 @@
 PHP code to convert multiple deeply nested json files to sqlite db
 
 - It navigate inside json structure to find info that can be mapped to tables and import them into SQLITE whithout having to know about the DB schema.
+- DB schema is dynamically modified as soon as new fields are found in the same json or in different json files 
 - The tool will also insert a column about the json level of the tuple and an unique id of the table.
 - The first tuple of each file will be stored in the files table with any root info.
 - If he finds a tuple that is already inserted it will not import them twice.
